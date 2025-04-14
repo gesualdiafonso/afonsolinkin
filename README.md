@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 🌐 Afonso LinkTree - Portfolio Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um projeto moderno e minimalista desenvolvido para reunir meus principais links e portfólios em um só lugar. Com design responsivo, UI animada e uma experiência de navegação fluida, esta landing page é uma ponte entre minhas criações e quem deseja conhecê-las.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛ **React + Vite** — Front-end moderno e super-rápido com hot reload.
+- 🔡 **TypeScript** — Tipagem estática para um código mais escalável e confiável.
+- 🎨 **UIkit** — Framework CSS leve e elegante para responsividade e animações.
+- ☁ **Vercel** — Deploy contínuo e integração direta com GitHub.
 
-## Expanding the ESLint configuration
+## 🖼️ Prévia Visual
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Em breve será adicionada uma captura de tela ou GIF demonstrando a UI da aplicação.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🧠 Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Cards com links para redes sociais, portfólio, site pessoal e outros.
+Imagens como background dinâmico dos cards.
+Animações suaves ao rolar a página (scroll reveal).
+Design em estilo glassmorphism inspirado na identidade visual da marca pessoal.
+## 📁 Estrutura do Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+src/
+├── components/          # Componentes reutilizáveis (HeroSection, LinkCard, Footer)
+├── utils/
+│   └── types/           # Tipagens TypeScript
+├── App.tsx              # Componente raiz
+├── main.tsx             # Entrada da aplicação React
+public/
+├── asset/               # Imagens e ícones
+└── css/
+    └── global.css       # Estilos customizados globais
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🛰️ Deploy em Produção
+
+Aplicação hospedada na Vercel, com integração automática via GitHub Actions.
+
+🔗 Acesse aqui: https://afonso-linktree.vercel.app
+
+## 📬 Contato
+
+Desenvolvido por Afonso Gesualdi: gesualdiafonsarr@gmail.com
