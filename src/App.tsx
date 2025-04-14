@@ -10,9 +10,9 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div className='uk-container uk-container-small uk-padding'>
+    <div className='uk-container uk-container-small uk-padding' uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 500">
       <HeroSection />
-      <div className='uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s' uk-grid="true">
+      <div className='uk-grid-small uk-child-width-1-2 uk-child-width-1-3@s' uk-grid="true" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-small; delay: 300">
         {Links.map(link => (
           <LinkCard key={link.title} {...link} />
         ))}
