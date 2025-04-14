@@ -6,9 +6,9 @@ const HeroSection = () => (
     <div className="uk-text-center uk-padding-large">
         <img src={fotoAfonso} alt="AG Logo" width="200" height="200" className="uk-margin-small uk-border-rounded" /> 
         <h3 className="uk-heading-line uk-text-bold">
-        <span>“A vida não examinada não vale a pena ser vivida.”</span>
+        <span>“Para quem não sabe para onde vai, qualquer caminho serve!”</span>
         </h3>
-        <p className="uk-text-meta">— Sócrates</p>
+        <p className="uk-text-meta">— Alice Wordeland</p>
         <SocialIconsBar icons={socialIcons} />
     </div>
 );

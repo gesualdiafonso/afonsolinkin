@@ -1,4 +1,4 @@
-import './App.css'
+import '../public/css/global.css'
 import "uikit/dist/css/uikit.min.css";
 import "uikit/dist/js/uikit.min.js";
 import HeroSection from './components/HeroSection/HeroSection';
