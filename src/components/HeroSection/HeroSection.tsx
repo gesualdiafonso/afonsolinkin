@@ -8,7 +8,7 @@ const HeroSection = () => (
         <h3 className="uk-heading-line uk-text-bold">
         <span>“Para quem não sabe para onde vai, qualquer caminho serve!”</span>
         </h3>
-        <p className="uk-text-meta">— Alice Wordeland</p>
+        <p className="uk-text-meta">— Alice Wordeland.</p>
         <SocialIconsBar icons={socialIcons} />
     </div>
 );
